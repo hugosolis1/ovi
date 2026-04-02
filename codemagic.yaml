@@ -8,7 +8,7 @@ workflows:
         XCODE_PROJECT: "PlanetaryPositions.xcodeproj"
         XCODE_SCHEME: "PlanetaryPositions"
         BUNDLE_ID: "com.yourcompany.PlanetaryPositions"
-      xcode: 15.2
+      xcode: 16.2
     scripts:
       - name: Build unsigned IPA
         script: |
