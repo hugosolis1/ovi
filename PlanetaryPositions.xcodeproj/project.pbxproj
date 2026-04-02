@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA000001 /* PlanetaryPositionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000101 /* PlanetaryPositionsApp.swift */; };
+		AA000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000201 /* ContentView.swift */; };
+		AA000003 /* PlanetPositionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000202 /* PlanetPositionsView.swift */; };
+		AA000004 /* AstrologyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000203 /* AstrologyChartView.swift */; };
+		AA000005 /* AspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000204 /* AspectsView.swift */; };
+		AA000006 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000301 /* Planet.swift */; };
+		AA000007 /* ZodiacSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000302 /* ZodiacSign.swift */; };
+		AA000008 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000303 /* House.swift */; };
+		AA000009 /* Aspect.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000304 /* Aspect.swift */; };
+		AA00000A /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000305 /* ChartData.swift */; };
+		AA00000B /* SwissEphemerisEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000401 /* SwissEphemerisEngine.swift */; };
+		AA00000C /* VSOP87Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000402 /* VSOP87Calculator.swift */; };
+		AA00000D /* ELP2000Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000403 /* ELP2000Calculator.swift */; };
+		AA00000E /* HouseCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000404 /* HouseCalculator.swift */; };
+		AA00000F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000501 /* Assets.xcassets */; };
+		AA000010 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000502 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA000000 /* PlanetaryPositions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetaryPositions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA000101 /* PlanetaryPositionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetaryPositionsApp.swift; sourceTree = "<group>"; };
+		AA000201 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA000202 /* PlanetPositionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetPositionsView.swift; sourceTree = "<group>"; };
+		AA000203 /* AstrologyChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyChartView.swift; sourceTree = "<group>"; };
+		AA000204 /* AspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectsView.swift; sourceTree = "<group>"; };
+		AA000301 /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		AA000302 /* ZodiacSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacSign.swift; sourceTree = "<group>"; };
+		AA000303 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		AA000304 /* Aspect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aspect.swift; sourceTree = "<group>"; };
+		AA000305 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		AA000401 /* SwissEphemerisEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwissEphemerisEngine.swift; sourceTree = "<group>"; };
+		AA000402 /* VSOP87Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VSOP87Calculator.swift; sourceTree = "<group>"; };
+		AA000403 /* ELP2000Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELP2000Calculator.swift; sourceTree = "<group>"; };
+		AA000404 /* HouseCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCalculator.swift; sourceTree = "<group>"; };
+		AA000501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA000502 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA000601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0000F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0000F0 = {
+			isa = PBXGroup;
+			children = (
+				AA000100 /* PlanetaryPositions */,
+				AA0000FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0000FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000 /* PlanetaryPositions.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA000100 /* PlanetaryPositions */ = {
+			isa = PBXGroup;
+			children = (
+				AA000101 /* PlanetaryPositionsApp.swift */,
+				AA000200 /* Views */,
+				AA000300 /* Models */,
+				AA000400 /* Engine */,
+				AA000501 /* Assets.xcassets */,
+				AA000500 /* Preview Content */,
+				AA000601 /* Info.plist */,
+			);
+			path = PlanetaryPositions;
+			sourceTree = "<group>";
+		};
+		AA000200 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA000201 /* ContentView.swift */,
+				AA000202 /* PlanetPositionsView.swift */,
+				AA000203 /* AstrologyChartView.swift */,
+				AA000204 /* AspectsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA000300 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA000301 /* Planet.swift */,
+				AA000302 /* ZodiacSign.swift */,
+				AA000303 /* House.swift */,
+				AA000304 /* Aspect.swift */,
+				AA000305 /* ChartData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA000400 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				AA000401 /* SwissEphemerisEngine.swift */,
+				AA000402 /* VSOP87Calculator.swift */,
+				AA000403 /* ELP2000Calculator.swift */,
+				AA000404 /* HouseCalculator.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		AA000500 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA000502 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0000F2 /* PlanetaryPositions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000F5 /* Build configuration list for PBXNativeTarget "PlanetaryPositions" */;
+			buildPhases = (
+				AA0000F3 /* Sources */,
+				AA0000F1 /* Frameworks */,
+				AA0000F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlanetaryPositions;
+			productName = PlanetaryPositions;
+			productReference = AA000000 /* PlanetaryPositions.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0000F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA0000F2 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA0000F7 /* Build configuration list for PBXProject "PlanetaryPositions" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0000F0;
+			productRefGroup = AA0000FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0000F2 /* PlanetaryPositions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0000F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000010 /* Preview Assets.xcassets in Resources */,
+				AA00000F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0000F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000001 /* PlanetaryPositionsApp.swift in Sources */,
+				AA000002 /* ContentView.swift in Sources */,
+				AA000003 /* PlanetPositionsView.swift in Sources */,
+				AA000004 /* AstrologyChartView.swift in Sources */,
+				AA000005 /* AspectsView.swift in Sources */,
+				AA000006 /* Planet.swift in Sources */,
+				AA000007 /* ZodiacSign.swift in Sources */,
+				AA000008 /* House.swift in Sources */,
+				AA000009 /* Aspect.swift in Sources */,
+				AA00000A /* ChartData.swift in Sources */,
+				AA00000B /* SwissEphemerisEngine.swift in Sources */,
+				AA00000C /* VSOP87Calculator.swift in Sources */,
+				AA00000D /* ELP2000Calculator.swift in Sources */,
+				AA00000E /* HouseCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA0000F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.8;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0000F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.8;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA0000FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlanetaryPositions/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanetaryPositions/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PlanetaryPositions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA0000FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PlanetaryPositions/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PlanetaryPositions/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.PlanetaryPositions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0000F5 /* Build configuration list for PBXNativeTarget "PlanetaryPositions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000FA /* Debug */,
+				AA0000FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000F7 /* Build configuration list for PBXProject "PlanetaryPositions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000F8 /* Debug */,
+				AA0000F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA0000F6 /* Project object */;
+}
